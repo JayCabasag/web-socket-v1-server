@@ -2,8 +2,10 @@ const users = []
 
 const messages = []
 
-const io = require('socket.io')(3001, {
-    cors: ['http://localhost:3000']
+const port = process.env.PORT || 3001;
+
+const io = require('socket.io')(port, {
+    cors: ['https://websocket-v1-client.vercel.app/']
 })
 
 io.on('connection', socket => {
