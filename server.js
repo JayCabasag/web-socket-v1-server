@@ -5,7 +5,7 @@ const messages = []
 const port = process.env.PORT || 3001;
 
 const io = require('socket.io')(port, {
-    cors: ['https://websocket-v1-client.vercel.app/']
+    cors: ['https://websocket-v1-client-pu8dbe85r-jaycabasag.vercel.app/']
 })
 
 io.on('connection', socket => {
